@@ -1,0 +1,9 @@
+version: "2.4"
+
+services:
+  warp:
+    build: .
+    ports:
+      - "8086:8086" # Proxy-Server
+    restart: always
+    command: ["--cfon", "--country", "DE", "--bind", "0.0.0.0:8086"]
