@@ -6,6 +6,6 @@ services:
     ports:
       - "8086:8086" # Proxy-Server
     restart: always
-    command: ["--bind", "0.0.0.0:8086"] # Warp
-    # command: ["--cfon", "--country", "DE", "--bind", "0.0.0.0:8086"] # Psiphon Over Warp
+    # command: ["--bind", "0.0.0.0:8086"] # Warp
+    command: ["--cfon", "--country", "DE", "--bind", "0.0.0.0:8086"] # Psiphon Over Warp
     # command: ["--gool", "--bind", "0.0.0.0:8086"] # Warp Over Warp
